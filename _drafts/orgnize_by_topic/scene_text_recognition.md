@@ -7,13 +7,15 @@ title:  "Scene Text Recognition"
 
 # Problem
 
-## 1. Detect part (BaseLine=Fast R-CNN)
+## 1. Detect (BaseLine=Fast R-CNN)
 
 ### Arbitrary Direction Scene Text
 
 ### No order in detected lines in Multi-Lines and tilted text
 
-###
+### Irregular and distorted text
+
+### Handwrite
 
 
 ### Anchor-based Model: Cropping ROI degrade accuracy.
@@ -30,7 +32,7 @@ title:  "Scene Text Recognition"
      3.
 
 
-## 2. Recognition part (BseLine=CRNN+CTC)
+## 2. Recognition (BseLine=CRNN+CTC)
 ### Distorted image
 ###
 

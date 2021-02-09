@@ -10,7 +10,7 @@ title:  "emo_tts"
   - Input
     - conc(att(char_emb, decoder_out), style_emb)
     - conc(att(char_emb + style_emb, decoder))
-  
+
 - Vocoder
   -
 
@@ -33,16 +33,15 @@ title:  "emo_tts"
   - Cons:
     [link_to_below]()
 
-[VAE]()
-  -
-
-## GST cons
-
-### Can't set emotion label
+## Can't synthesize emotional TTS with specific emotion label
 [Weight Control]()
   - Method:
     - input emotionally labeled dataset.
     - Set specific emotion weight by centroid of specific emotion cluster
+    - Input intuitive prosodic feature instead.
+      related:
+      [Controllable neural text-to-speech synthesis using intuitive prosodic features](https://arxiv.org/pdf/2009.06775.pdf)
+      [note of above paper](https://speakerdeck.com/beeeee/is2020du-mihui-zi-liao)
 
 [Dirichlet_VAE](/Users/rosen/paper/TTS/style_learning/Dirichlet_VAE.pdf)
 
@@ -50,7 +49,8 @@ title:  "emo_tts"
     - make latent variable z, acquire from encoder, subject to dirichlet distribution by KL divergence?
     - Add emotion classifier to each z to overall loss
 
-### Tokens is not disentangled
+
+## Style controlling tokens are not disentangled
 [Hierarchical generative modeling for controllable speech synthesis](https://arxiv.org/pdf/1810.07217.pdf)
   - Method:
     - Design hierarchical latent variables, categories for attribute and Gaussian for attribute configuration, to control.
@@ -61,25 +61,27 @@ title:  "emo_tts"
   - Cons:
     - ?
 
-### GST->Can't Learn saliently local prosodic style
+
+## Can't Learn saliently local prosodic style
 
 [word-level empphasis](https://drive.google.com/file/d/0BwCq1DWnNN4NWlhuQ21kSzU1VTQ/view)
   - indirectly related
-
 [EMPHASIS: An Emotional Phoneme-based Acoustic Model
 for Speech Synthesis System](https://arxiv.org/pdf/1806.09276.pdf)
   - acoustic parameter model
 
-### GST->Can't Match Text with proper Prosodic Style
+
+## GST->Can't Match Text with proper Prosodic Style
 
 
-### GST->Can't represent emotion correctly
-
+## GST
+  - type of adding Style embedding to Text embedding.(compare with speaker_emb)
+    - text_emb + style_emb
+    - concatenate(context_vector(text_emb),  style_emb)
 
 ### GST-> Is Multi-head itself efficiency?
   - Hyp: Seems solved unrelated info leakage problem, but also suffer with target info loss problem.
   - Eval:
-
   - Method: Calculate the differentiate  
   - Meth1: contrastive learning
   - Meth2: instance Normalization

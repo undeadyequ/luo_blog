@@ -16,6 +16,8 @@ $$
 
 [latex math in undergrad](http://tug.ctan.org/info/undergradmath/undergradmath.pdf)
 
+
+
 ## Use latex in Atom
   - Add mathjax.js to render in web
   - ctr+shift+x to render in preview by markdown-preview-plus

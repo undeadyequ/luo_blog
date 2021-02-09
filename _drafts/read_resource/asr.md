@@ -27,6 +27,9 @@ title:  "asr"
     maximum observable sequence
   - Math:
 
+## Multi-variable  VS Mixture model
+  - 
+
 $$ a_i(t) $$
 $$ b_i(t) $$
 $$ \lambda_i(t) $$

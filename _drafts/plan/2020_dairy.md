@@ -90,7 +90,7 @@ Comment:
 			- 3. What is the difference, and their advantage comparing from author’s method
 		- Do “Co-working” style reading resursively
 
-10/26
+## 10/26 关于完成目标的缺点
 1. 仔细分析目标，制定可执行，有时限的计划。
 2. 把快速得到成果放在第一位，重要但短期没成果的放在第二位。
 3. 克制发散思维，胡思乱想。

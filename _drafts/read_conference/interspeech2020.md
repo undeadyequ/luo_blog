@@ -16,7 +16,7 @@ title:  "interspeech_2020"
     - domain mismatch in Emotional recognition
     - Prosody transfer suffer poor performance
   - Method
-    - Separated prosody model, input with style/linguistic embedding and output with F0/Duration, etc, from acoustic model, input with linguistic/prosodic_output and output with MFCC
+    - Separated prosody model, input with style/linguistic embedding and output with F0/Duration, etc. In acoustic model, input with linguistic/prosodic_output and output with MFCC
     - Training style extraction model based on text+audio multimodal by IEMOCAP + small labeled TTS data
     - Use MFCC instead of mel spectrogram
 
@@ -58,4 +58,4 @@ Incorporating a BERT model](https://www.isca-speech.org/archive/Interspeech_2020
 [Controllable neural text-to-speech synthesis using intuitive prosodic features](https://arxiv.org/pdf/2009.06775.pdf)
 [PPT](https://speakerdeck.com/beeeee/is2020du-mihui-zi-liao)
   - utterance-wise acoustic feature(showed below) used to append to text embedding is used to control speech intuitively
-  - log-pitch range, log-phone duration, log-energy, and spectral tilt
+  - log-pitch, log-pitch range, log-phone duration, log-energy, and spectral tilt
