@@ -7,7 +7,7 @@
   | 0       |    0       |
   | 1       |   1       |
 
-2. If 1 is yes, then how to generate emotion-specific prosody feature? <= emo_contrl_tts 
+2. If 1 is yes, then how to generate emotion-specific prosody feature? <= emo_contrl_tts
   - Criterion
     - Correctness                     <=  Prosody model
       - Loss(gd_psd - pred_psd)
