@@ -55,36 +55,75 @@
       - teacher-forcing by emo_feats instead of encoded emo_feats (1_0.5h)
       -
 
-### emo_contrl_tts
-  - Prosody Model
-    - Non-Rev NN
-      - feats ->(RF) emos ->(NN) feats(prosody)   T   
-      - feats ->(NN) emos ->(NN) feats(prosody)  <= NO VAE   (2_2h/2_20h: eval_A/eval_B)
-      - feats ->(NN) emos ->(NN) feats(prosody)  <= VAE (3_?)
-    - REV-NN(Reversible Neural Network)
-      - feats ->(Glow) emos ->(NN) feats(prosody) <= (4_?)
-    - Evaluate
-      A. Loss(gd_psd - pred_psd)
-      B. f(emo_distribution) ~ f(emo_MOS_distribution)
+# Emo_contrl_tts
+### Discription
+  - Capable to condition audio on emotional label
+  - Capable to condition audio on emotional label with scale
+  - Capable to condition audio on each prosody attribute
+
+### Data
+  - IEMOCAP
+  - Blizzard13
+    - filter expressive Data
+      [implement](../impl/emo_contrl_tts_data.md)
 
 
-  - Training Process
-      - pre-train (REV-NN) by emo_feats of IEMOCAP
-        - Showed above
-      - Fine-tune REV-NN along with Tacotron2 by Blizzard13
-         - Fine tune or load pre-trained?
-      -
-    - feats ->
-  3.1. Extract Emo_feats and feats
-    - wav.scp -> emo_feats.csv 1h  OK
-      - Use RF ?
-      - multi-process to speed up ?
-      - feature used ( no sig ?)
-  3.2. modify contrl emoTTS model
-    - Add emo_feats.csv to path_name_type args
-    - input text, mels, emo_feats into model
-      - prosody encoder with encoded text VS with encoded text and emo_distribution
-    - emo_feats and emo_lab
+### Emo_Feature
+  - Extract Emo_feats
+    - Sentence-level emo_feats
+      - pitch, pitch range, **phone duration**, speech energy, and **spectral tilt**
+      - 8
+      => Test
+      - Box Plot of max, min, aver, std of Emo_feats by IEMOCAP and Blizzard13
+      - Should be similar
+
+    - text feats
+
+
+    - Normalization
+      - Apply MaxMin of IEMOCAP to Blizzard13
+      - If Blizzard13 is out of range, then set it to 0 or 1
+    [implement](../impl/emo_contrl_tts.md)
+
+### Model
+#### SER model (Trained with Prosody Model)
+  - DNN_3_256 with emo_feats
+    - 8:256:256:8
+  - LSTM_256 with emo_feats + tf_idf
+    - 2???+8:256:8
+  - Loss
+    - BCE
+  => Test by IEMOCAP evaluate data
+  - f1
+  - t-sne/PCR
+  - confusion matrix
+### Prosody Model
+  - DNN_3_256
+    - 6:256:256:6
+  - VAE(Plan)
+  - GLOW(Plan)
+  - Loss
+    - MSE
+  => Test
+  1. loss_all
+
+
+### Tacotron2 Model
+  - Train
+    - Acoustic Model
+      - Encoderd
+      - Decoder with prosody input
+    - Loss
+  - Inference
+    - Vocoder model (inference)
+      - Mel -> Linear by invers_mel_basis matrix
+      - Linear -> WAV by griffin_lim
+
+### Training Process
+  - Pre-train SER and Prosody by IEMOCAP
+  - Fine-tune Prosody model and fix SER model in Tacotron2_controllable by
+
+
 
 
 Experiment

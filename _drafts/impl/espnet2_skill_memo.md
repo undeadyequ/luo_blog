@@ -9,6 +9,7 @@ categories: jekyll update
 
 
 
+
 ## Embedding para_input into seq2seq model
   - Embedding as attention input
     - Attention(input + para_input, output)    -> context_v -> decoder(context_v, prenet_out)
@@ -42,8 +43,6 @@ categories: jekyll update
         default="tacotron2",
     )
     ```
-
-
 
 
 ## Sampler

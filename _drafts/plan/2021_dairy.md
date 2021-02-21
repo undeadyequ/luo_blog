@@ -20,3 +20,15 @@ title:  "2021_dairy"
   - Shift to another quiet and relax environment, try mediatation and back to work.
 - Couldn't persist on splitting and writing down tasks one by one for saving trouble
 Persist on consistent improvement.
+
+2/17
+- Fast Implement
+	- Separate big to several small
+	- Set **ONE**, the most-important target/test for each small
+	- **Capsulate unrelated/less-important** part by
+		- hardcode
+		- easier method which will not offend the main target
+	- Quickly got the result
+	- **Coclude the process**
+	- re-circle with **more detail**
+-
