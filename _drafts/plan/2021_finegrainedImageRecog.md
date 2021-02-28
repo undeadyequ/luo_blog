@@ -3,6 +3,8 @@
   - Visual enhanced
   - Non-Visual Enchanced
     - DET
+      - Character Region Awareness for Text Detection
+        - 
       - Backbone
         - Mobile-net
       - Neck
@@ -11,29 +13,38 @@
         - ?
     - REC
       - ?
-- Visual Model
-  - ResNet50 + FN
-
-
-- Out of V and STR
-  - V: [v_units, ]
-  - STR
+  - Output
     - DET: [n_bbox, 4]      => Used in p/s detection
       - Extract Feature: [3, ]
     - REC: [n_word, ] => Used in Demand_C
       - Extract Feature: [n_word, tf-idf]
+- Visual Model
+  - ResNet50 + FN
+    - Output: [v_units, ]
 
-- Merge[STR; V]
+
+- Joint Model for detection
+  - V+DET: [v_units + a(3), ]
+    - a=3: n_bbox, aver_bbox, std_bbox
+  [](../impl/)
+- Joint Model for Fine-grained classification
   - Concatenate
     - V+REC: [v_units + rec_units, ]
-    - V+DET: [v_units + a(3), ]
-      - a=3: n_bbox, aver_bbox, std_bbox
   - ...
 
 
-## Data Preparation
-  - Categories: Racism, Strike, Woman March,
+## Data
+  - Categories: Racism, Strike, Woman March
+  - UCLA data
+    - Label
+  - Target: Protest, Violence, 6 Attribute
+  - ICDAR 2015
 
+
+## Crowd-sourcing Label
+  - bbox location
+  - text label
+  - classification
 
 ## Training Process
 - Protest/Sign Detection

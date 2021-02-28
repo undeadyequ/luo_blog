@@ -7,6 +7,9 @@ title:  "Scene Text Recognition"
 
 # Problem
 
+## generate character-level ground truth
+
+
 ## 1. Detect (BaseLine=Fast R-CNN)
 
 ### Arbitrary Direction Scene Text

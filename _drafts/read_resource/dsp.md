@@ -1,6 +1,13 @@
 <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
 
+## formant, harmonic and resonator
+[https://www.voicescienceworks.org/harmonics-vs-formants.html](tutorial)
+[https://person2.sol.lu.se/SidneyWood/praate/whatform.html](harmonic)
+
+harmonic, when close to the resonance frequency of vocal tract, passing freely and formed formant
+harmonic, when not close to the resonance frequency of vocal tract, not passing freely and weaken and form troughs bettwen peaks
+
 
 1. Why need complex?
   - retrain 2d data, widely used in magnet, speech, electrical wave

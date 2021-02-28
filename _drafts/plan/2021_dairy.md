@@ -29,6 +29,9 @@ Persist on consistent improvement.
 		- hardcode
 		- easier method which will not offend the main target
 	- Quickly got the result
-	- **Coclude the process**
+	- **Conclude the process**
 	- re-circle with **more detail**
--
+
+
+2-28
+- Never cost time on your "assumed problem"

@@ -4,7 +4,7 @@
 
 python extract_combinedfeats_from_scp.py \
   -input_csv "${}" \
-  
+
 
 ```
 
@@ -42,15 +42,6 @@ def extract_txtfeats_from_txt(input_csv, corp_csv, out_pkl=None, method="tfidf",
       pickle.dump(txtfeats, f)
   return txtfeats
 
-
-x_train_text = features_text[:x_train_text.shape[0]]
-x_test_text = features_text[-x_test_text.shape[0]:]
-
-print(features_text.shape, x_train_text.shape, x_test_text.shape)
-
-
-[]  
-  pass
 
 def vis_fts_emo_relation(id_fts_pred_lab_f):
   """

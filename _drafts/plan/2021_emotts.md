@@ -63,26 +63,36 @@
 
 ### Data
   - IEMOCAP
-  - Blizzard13
-    - filter expressive Data
-      [implement](../impl/emo_contrl_tts_data.md)
+    - prepare data
+    - { 'ang': 0, 'hap': 1, 'exc': 2, 'sad': 3, 'fru': 4, 'fea': 5, 'sur': 6, 'neu': 7, 'xxx': 8, 'oth': 8}
+    - { 'ang': 0, 'hap': 1, 'sad': 2, 'fea': 3, 'sur': 4, 'neu': 5 }
 
+  - Blizzard13
+    - filter expressive data by selecting wavs with high confidence for each emotion by pretrained SER model.
+      [implement](../impl/emo_contrl_tts_data.md)
 
 ### Emo_Feature
   - Extract Emo_feats
     - Sentence-level emo_feats
-      - pitch, pitch range, **phone duration**, speech energy, and **spectral tilt**
-      - 8
+      - pitch, pitch range, **phone duration**, speech energy, and **spectral tilt**    
+        - 3 pitch estimator, average log-pitch and log-pitch range(0.05-0.95) of voiced speech
+        - force-align the text and audio
+        - rmse: remove silence, log
+        - the framewise spectral tilt of voiced speech
+
+      - sig(mean,std), rmse(mean,std), silence, harmonic, pitch(mean,std), auto_corrs(remove) => ser model
       => Test
       - Box Plot of max, min, aver, std of Emo_feats by IEMOCAP and Blizzard13
       - Should be similar
 
     - text feats
 
-
     - Normalization
-      - Apply MaxMin of IEMOCAP to Blizzard13
+      - the mean of each feats is too small to fall into learning zone of sigmoid
+        - Apply log, and set 25 75 as Maxmin
+        => check
       - If Blizzard13 is out of range, then set it to 0 or 1
+
     [implement](../impl/emo_contrl_tts.md)
 
 ### Model
@@ -119,11 +129,10 @@
       - Mel -> Linear by invers_mel_basis matrix
       - Linear -> WAV by griffin_lim
 
+
 ### Training Process
   - Pre-train SER and Prosody by IEMOCAP
   - Fine-tune Prosody model and fix SER model in Tacotron2_controllable by
-
-
 
 
 Experiment
