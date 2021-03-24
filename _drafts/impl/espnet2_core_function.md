@@ -21,7 +21,7 @@
 ```python
 ->main(cmd): [TTSTask=>AbsTask]        # Build All train/Eval Environment
   ->main_worker(args): [AbsTask]
-    ->build_model(args): model [TTSTask]                <= Unfolded below
+    ->build_model(args): model [ESPnetTTSModel]                <= Unfolded below
     ->build_optimizer(args, model=model): [AbsTask]
     ->scheduler_classes.get(name):scheduler
     ->schedulers.append(scheduler)
@@ -110,4 +110,20 @@
 
   # inference2
   -> exp.exp_emo_labs(ref_audio):
+```
+
+
+### espnet2
+```python
+text
+
+# training
+data
+sampler
+optimzer
+task
+tts
+main_func
+
+
 ```
