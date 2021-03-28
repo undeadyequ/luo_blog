@@ -27,7 +27,8 @@
     ->schedulers.append(scheduler)
     ->build_iter_factory(args):train_iter_factory []
       ->build_sequence_iter_factory(args, iter_option):SequenceIterFactory [] \
-        ->ESPnetDataset(iter_option.data_path_and_name_and_type, iter_option.preprocess):dataset [torch.utils.data]
+        ->A:ESPnetDataset(iter_option.data_path_and_name_and_type, iter_option.preprocess):dataset [torch.utils.data]
+        ->B:IterableESPnetDataset(iter_option.data_path_and_name_and_type, iter_option.preprocess):dataset [torch.utils.data]
         ->build_batch_sampler(iter_option.batch_type, iter_option.shape_files, batch_size):batch_sampler [samplers]
           ->NumElementsBatchSampler()
         ->SequenceIterFactory(dataset, batches, args.seeds):seqFactor []
@@ -116,14 +117,32 @@
 ### espnet2
 ```python
 text
-
+  - abs_tokenizer.py
+  -
 # training
-data
+train
+  -
 sampler
 optimzer
 task
+  - abs_task.py
 tts
+  - gst
+    - style_encoder.py
+  - ser
+  - ct ?
+    -
+  - feature_extract
+    -
+  - tacotron2.py
+  - espnet_model.py
+  - espnet_emo_control_model.py
+  - tacotron2_controllable.py
+  -
 main_func
-
+layers
+  - abs_mvn.py
+  - global_mvn.py (where to write normalize_conf)
+  - utterance_mvn.py
 
 ```

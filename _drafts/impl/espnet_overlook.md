@@ -1,7 +1,3 @@
-
-## espnet2
-
-
 ### Train (write in tts.sh)
 
 1. Data preparation
@@ -10,7 +6,7 @@
   - Extract to *.n.ark, *.n.scp
   - By kaldi's make_fbank
 3. Remove long/short sentence ( min/max frame_num)
-  - 
+  -
 
 4. Feature in air (only when type = raw)
     -

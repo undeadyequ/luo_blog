@@ -61,7 +61,7 @@ if args.resume:
 # emo_contrl_tts.py
 from espnet.tts.ser import *
 
-Class EmocontrlTTS():
+class EmocontrlTTS:
   def __init__(, ..psd_encoder, psd_encoder_config ..):
     self.psd_encoder = build_psd_encoder(psd_encoder, psd_encoder_config)
     ...
