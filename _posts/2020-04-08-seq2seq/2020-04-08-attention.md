@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Attention Summary"
+toc: true
 ---
 
 {% include toc.html %}
