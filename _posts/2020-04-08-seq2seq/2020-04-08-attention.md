@@ -12,7 +12,9 @@ Multi-head Attention
 ### Attention Mechanism
 
 -	Description: Concentrate corresponding specific encoding part to decode, in sequential decoding by previous decoded part and attention weight
-￼![hi](/luo_blog/assets/attention-9bec68cb.png)
+￼
+![Attention Problem](/luo_blog/assets/attention-9bec68cb.png)
+
 -	Problem
 -	Different Situation in ASR from machine translation and handwriting synthesis
 -	Longer input sequence which incur the Challenge of distinguishing similar speech fragments
@@ -22,7 +24,7 @@ Multi-head Attention
 -	Input sequence is much noisier and does not have as clear structure
 -	Text summarization
 
-![hi](assets/attention-7bb753e7.png)
+![hi](/luo_blog/assets/attention-7bb753e7.png)
 
 	-	Inaccurately reproducing factual details, an inability to deal with out-of-vocabulary (OOV) words, repeating themselves
 ￼
@@ -30,16 +32,16 @@ Multi-head Attention
 	-	At the i-th step an ARSG generates an output yi by focusing on the relevant elements of h
 	-	 location-based, content-based and hybrid attention mechanisms
 
-￼￼![hi](assets/attention-ddff82c7.png)
-![](assets/attention-44c84ca3.png)
-![](assets/attention-29f1bdb9.png)￼
+￼￼![hi](/luo_blog/assets/attention-ddff82c7.png)
+![](/luo_blog/assets/attention-44c84ca3.png)
+![](/luo_blog/assets/attention-29f1bdb9.png)￼
 
 ￼
 	-	Question
 	-
 
 ￼
-![](assets/attention-7c70f1ad.png)
+![](/luo_blog/assets/attention-7c70f1ad.png)
 
 
 Localization-aware attention
@@ -48,18 +50,18 @@ Pointer-generator
 	-	The ability to produce OOV words is one of the primary advantages of pointer-generator models
 	-	pgen is used as a soft switch to choose between generating a word from the vocabulary by sampling from Pvocab, or copying a word from the input sequence by sampling from the attention distribution a t .
 ￼
-![](assets/attention-ef9e3513.png)
-![](assets/attention-7dcdb1fc.png)
+![](/luo_blog/assets/attention-ef9e3513.png)
+![](/luo_blog/assets/attention-7dcdb1fc.png)
 ￼
 	•	Coverage mechanism
 	-	Repetition is a common problem for sequence- to-sequence models
-  ![](assets/attention-8a7d3c9f.png)
-![](assets/attention-84713608.png)
+  ![](/luo_blog/assets/attention-8a7d3c9f.png)
+![](/luo_blog/assets/attention-84713608.png)
 ￼
 	-	This ensures that the attention mechanism’s current decision (choosing where to attend next) is informed by a reminder of its previous decisions (summarized in c t ). This should make it easier for the attention mechanism to avoid repeatedly attending to the same locations, and thus avoid generating repetitive text.
 ￼
-￼![](assets/attention-84713608.png)
-![](assets/attention-512fbd87.png)
+￼![](/luo_blog/assets/attention-84713608.png)
+![](/luo_blog/assets/attention-512fbd87.png)
 Forward attention
 	-	Only the alignment paths that satisfy the monotonic condition are taken into consideration at each decoder timestep
 	-	transition agent
@@ -82,13 +84,13 @@ Multi-head Attention
 	-	The order of tokens is meaningful, the front tokens shows related key of front separation key, back tokens show back separation.
 
 ￼
-![](assets/attention-30289985.png)
+![](/luo_blog/assets/attention-30289985.png)
 
 
 	•	Transformer
 ￼                                    ￼
-![](assets/attention-6119fa54.png)
-![](assets/attention-0b94240f.png)
+![](/luo_blog/assets/attention-6119fa54.png)
+![](/luo_blog/assets/attention-0b94240f.png)
 
 	•	Attention showed in EPSNET
 	-	Location-aware attention module
@@ -118,4 +120,4 @@ General
 Location base
 	-	Score = W * s_t
 
-![](assets/attention-09e5cb51.png)￼
+![](/luo_blog/assets/attention-09e5cb51.png)￼
