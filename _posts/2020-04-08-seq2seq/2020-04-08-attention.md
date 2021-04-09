@@ -12,7 +12,7 @@ Multi-head Attention
 ### Attention Mechanism
 
 -	Description: Concentrate corresponding specific encoding part to decode, in sequential decoding by previous decoded part and attention weight
-￼![hi](assets/attention-9bec68cb.png)
+￼![hi](/assets/attention-9bec68cb.png)
 -	Problem
 -	Different Situation in ASR from machine translation and handwriting synthesis
 -	Longer input sequence which incur the Challenge of distinguishing similar speech fragments
@@ -22,7 +22,7 @@ Multi-head Attention
 -	Input sequence is much noisier and does not have as clear structure
 -	Text summarization
 
-![](assets/attention-7bb753e7.png)
+![hi](assets/attention-7bb753e7.png)
 
 	-	Inaccurately reproducing factual details, an inability to deal with out-of-vocabulary (OOV) words, repeating themselves
 ￼
@@ -30,7 +30,7 @@ Multi-head Attention
 	-	At the i-th step an ARSG generates an output yi by focusing on the relevant elements of h
 	-	 location-based, content-based and hybrid attention mechanisms
 
-￼￼![](assets/attention-ddff82c7.png)
+￼￼![hi](assets/attention-ddff82c7.png)
 ![](assets/attention-44c84ca3.png)
 ![](assets/attention-29f1bdb9.png)￼
 
