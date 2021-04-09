@@ -96,7 +96,7 @@ Forward attention
 
 ### Attention Score Computation
 
-![](assets/2020-04-08-attention-49358a8a.png)
+![](/luo_blog/assets/2020-04-08-attention-49358a8a.png)
 
 Content base
 	-	Confine
