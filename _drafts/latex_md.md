@@ -28,6 +28,7 @@ $$
 
 
 ## Jekyll
+- Start draft engine
 ```python
 bundle exec jekyll serve --draft
 
