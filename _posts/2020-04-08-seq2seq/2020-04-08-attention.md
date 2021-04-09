@@ -66,36 +66,37 @@ Forward attention
 
 
 ### Multi-head Attention
-	-	Problem:
-	-	Incorrect separation of query cause hard-to-disentangle problem.
-	-	Automatically separate query by calculating correlative score or clustering method
-	-	curriculum learning method
-	-	Data Augmentation by altering single factor
-	-	1 head query searching 1 head token will cause hard-to-disentangle problem when 1 head query is entangle info
-	-	1 to N
-	-	Semi-supervised learning by discriminate each token to specify target
-	-	Summary:
-	-	Separate bits of hidden vector into several head making interplay calculation easily.  
-	-	Learning interplay of bits of multi hidden vector in fixed number of bits, result of units number dividing heads number.
-	-	Interplay: Why does Direct multiplication of linear-transformed heads  work so well ??
-	-	The order of tokens is meaningful, the front tokens shows related key of front separation key, back tokens show back separation.
-
-![](/luo_blog/assets/attention-30289985.png)
-
-	•	Transformer
+#### Transformer
 ￼                                    ￼
 ![](/luo_blog/assets/attention-6119fa54.png)
 ![](/luo_blog/assets/attention-0b94240f.png)
 
-	•	Attention showed in EPSNET
-	-	Location-aware attention module
-	-	Forward
-	-	Forward transmission
-	-	GuidedAttentionLoss
-	-
+####	Problem:
+-	Incorrect separation of query cause hard-to-disentangle problem.
+-	Automatically separate query by calculating correlative score or clustering method
+-	Data Augmentation by altering single factor
+-	1 head query searching 1 head token will cause hard-to-disentangle problem when 1 head query is entangle info
+-	1 to N
+-	Semi-supervised learning by discriminate each token to specify target
+
+####	Summary:
+-	Separate bits of hidden vector into several head making interplay calculation easily.  
+-	Learning interplay of bits of multi hidden vector in fixed number of bits, result of units number dividing heads number.
+-	Interplay: Why does Direct multiplication of linear-transformed heads  work so well ??
+-	The order of tokens is meaningful, the front tokens shows related key of front separation key, back tokens show back separation.
+
+![](/luo_blog/assets/attention-30289985.png)
+
+###	Attention showed in EPSNET
+-	Location-aware attention module
+-	Forward
+-	Forward transmission
+-	GuidedAttentionLoss
 
 
 ### Attention Score Computation
+
+![](assets/2020-04-08-attention-49358a8a.png)
 
 Content base
 	-	Confine
