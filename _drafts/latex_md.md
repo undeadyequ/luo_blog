@@ -25,3 +25,10 @@ $$
 
 
 `This is code`
+
+
+## Jekyll
+```python
+bundle exec jekyll serve --draft
+
+```
