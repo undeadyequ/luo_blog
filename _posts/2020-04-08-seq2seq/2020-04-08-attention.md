@@ -12,7 +12,7 @@ Multi-head Attention
 ### Attention Mechanism
 
 -	Description: Concentrate corresponding specific encoding part to decode, in sequential decoding by previous decoded part and attention weight
-￼![hi](/assets/attention-9bec68cb.png)
+￼![hi](/luo_blog/assets/attention-9bec68cb.png)
 -	Problem
 -	Different Situation in ASR from machine translation and handwriting synthesis
 -	Longer input sequence which incur the Challenge of distinguishing similar speech fragments
