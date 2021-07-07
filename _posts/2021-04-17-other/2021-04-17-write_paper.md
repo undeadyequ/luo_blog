@@ -16,7 +16,6 @@ title:  "Paper Writing"
   - Emphasis the Essence
   - Explain the essence in easy-to-understand way
 
-
 ### Experiment
   -
 
