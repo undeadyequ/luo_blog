@@ -6,7 +6,8 @@ toc: true
 
 {% include toc.html %}
 
-# Emotion-Controllable Speech Synthesis Using Emotion Soft-Label and Fine-Grained Prosody Factors
+## Paper
+- Emotion-Controllable Speech Synthesis Using Emotion Soft-Label and Fine-Grained Prosody Factors
 
 ## Speech emotion is simultaneously controlled by
   - Coarse-grained (e.g. emotion soft-label)
@@ -68,7 +69,7 @@ toc: true
     <source type="audio/wav" src="/luo_blog/assets/audio/emo2psd_neu_eng_mean_m0_3_wav1_gen.wav"></source>
     <p>Your browser does not support the audio element.</p>
   </audio>
-  
+
   - Neutral(1.0) + Energy_range(+0.3)
   <audio controls="controls">
     <source type="audio/wav" src="/luo_blog/assets/audio/emo2psd_neu_eng_range_0_3_wav1_gen.wav"></source>
