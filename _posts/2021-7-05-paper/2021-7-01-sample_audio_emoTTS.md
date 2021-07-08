@@ -1,21 +1,103 @@
 ---
 layout: post
-title:  "contrastive Leanring"
+title:  "sample audio"
 toc: true
 ---
 
 {% include toc.html %}
 
-### angry
+# Emotion-Controllable Speech Synthesis Using Emotion Soft-Label and Fine-Grained Prosody Factors
 
-![](/luo_blog/assets/attention-7bb753e7.png)
+## Speech emotion is simultaneously controlled by
+  - Coarse-grained (e.g. emotion soft-label)
+  - Fine-grained (e.g. prosodic feature) control
 
-<audio controls="controls">
-  <source type="audio/wav" src="assets/2021-7-01-sample_audio_emoTTS-948d0d75.wav"></source>
-  <p>Your browser does not support the audio element.</p>
-</audio>
+## Coarse-grained: Angry = 1.0
+  - Angry(1.0) + Energy_mean(+0.3)
+  <audio controls="controls">
+    <source type="audio/wav" src="/luo_blog/assets/audio/emo2psd_ang_eng_mean_0_3_wav1_gen.wav"></source>
+    <p>Your browser does not support the audio element.</p>
+  </audio>
+  - Angry(1.0) + Energy_mean(-0.3)
+  <audio controls="controls">
+    <source type="audio/wav" src="/luo_blog/assets/audio/emo2psd_ang_eng_mean_m0_3_wav1_gen.wav"></source>
+    <p>Your browser does not support the audio element.</p>
+  </audio>
 
-<audio controls="controls">
-  <source type="audio/wav" src="/luo_blog/assets/audio/CB-JE-14-37angry.wav"></source>
-  <p>Your browser does not support the audio element.</p>
-</audio>
+  - Angry(1.0) + Energy_range(+0.3)
+  <audio controls="controls">
+    <source type="audio/wav" src="/luo_blog/assets/audio/emo2psd_ang_eng_range_0_3_wav1_gen.wav"></source>
+    <p>Your browser does not support the audio element.</p>
+  </audio>
+  - Angry(1.0) + Energy_range(-0.3)
+  <audio controls="controls">
+    <source type="audio/wav" src="/luo_blog/assets/audio/emo2psd_ang_eng_range_m0_3_wav1_gen.wav"></source>
+    <p>Your browser does not support the audio element.</p>
+  </audio>
+
+  - Angry(1.0) + Pitch_mean(+0.3)
+  <audio controls="controls">
+    <source type="audio/wav" src="/luo_blog/assets/audio/emo2psd_ang_pitch_mean_0_3_wav1_gen.wav"></source>
+    <p>Your browser does not support the audio element.</p>
+  </audio>
+  - Angry(1.0) + Pitch_mean(-0.3)
+  <audio controls="controls">
+    <source type="audio/wav" src="/luo_blog/assets/audio/emo2psd_ang_pitch_mean_m0_3_wav1_gen.wav"></source>
+    <p>Your browser does not support the audio element.</p>
+  </audio>
+
+  - Angry(1.0) + Pitch_range(+0.3)
+  <audio controls="controls">
+    <source type="audio/wav" src="/luo_blog/assets/audio/emo2psd_ang_pitch_range_0_3_wav1_gen.wav"></source>
+    <p>Your browser does not support the audio element.</p>
+  </audio>
+  - Angry(1.0) + Pitch_range(-0.3)
+  <audio controls="controls">
+    <source type="audio/wav" src="/luo_blog/assets/audio/emo2psd_ang_pitch_range_m0_3_wav1_gen.wav"></source>
+    <p>Your browser does not support the audio element.</p>
+  </audio>
+
+## Coarse-grained: Neutral = 1.0
+  - Neutral(1.0) + Energy_mean(+0.3)
+  <audio controls="controls">
+    <source type="audio/wav" src="/luo_blog/assets/audio/emo2psd_neu_eng_mean_0_3_wav1_gen.wav"></source>
+    <p>Your browser does not support the audio element.</p>
+  </audio>
+  - Neutral(1.0) + Energy_mean(-0.3)
+  <audio controls="controls">
+    <source type="audio/wav" src="/luo_blog/assets/audio/emo2psd_neu_eng_mean_m0_3_wav1_gen.wav"></source>
+    <p>Your browser does not support the audio element.</p>
+  </audio>
+  
+  - Neutral(1.0) + Energy_range(+0.3)
+  <audio controls="controls">
+    <source type="audio/wav" src="/luo_blog/assets/audio/emo2psd_neu_eng_range_0_3_wav1_gen.wav"></source>
+    <p>Your browser does not support the audio element.</p>
+  </audio>
+  - Neutral(1.0) + Energy_range(-0.3)
+  <audio controls="controls">
+    <source type="audio/wav" src="/luo_blog/assets/audio/emo2psd_neu_eng_range_m0_3_wav1_gen.wav"></source>
+    <p>Your browser does not support the audio element.</p>
+  </audio>
+
+  - Neutral(1.0) + Pitch_mean(+0.3)
+  <audio controls="controls">
+    <source type="audio/wav" src="/luo_blog/assets/audio/emo2psd_neu_pitch_mean_0_3_wav1_gen.wav"></source>
+    <p>Your browser does not support the audio element.</p>
+  </audio>
+  - Neutral(1.0) + Pitch_mean(-0.3)
+  <audio controls="controls">
+    <source type="audio/wav" src="/luo_blog/assets/audio/emo2psd_neu_pitch_mean_m0_3_wav1_gen.wav"></source>
+    <p>Your browser does not support the audio element.</p>
+  </audio>
+
+  - Neutral(1.0) + Pitch_range(+0.3)
+  <audio controls="controls">
+    <source type="audio/wav" src="/luo_blog/assets/audio/emo2psd_neu_pitch_range_0_3_wav1_gen.wav"></source>
+    <p>Your browser does not support the audio element.</p>
+  </audio>
+  - Neutral(1.0) + Pitch_range(-0.3)
+  <audio controls="controls">
+    <source type="audio/wav" src="/luo_blog/assets/audio/emo2psd_neu_pitch_range_m0_3_wav1_gen.wav"></source>
+    <p>Your browser does not support the audio element.</p>
+  </audio>
