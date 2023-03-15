@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "sample audio"
+title:  "Sample audio"
 toc: true
 ---
 
