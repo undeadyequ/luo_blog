@@ -131,7 +131,7 @@ toc: true
   <source type="audio/wav" src="/luo_blog/assets/promTTS/ang_eng_mean_0_VERB_03_2.wav"></source>
   <p>Your browser does not support the audio element.</p>
   </audio>
-- VERB (-0.3) \ 
+- VERB (-0.3) \
   They forcefully **keep** them at a black hotel.
 
   <audio controls="controls">
