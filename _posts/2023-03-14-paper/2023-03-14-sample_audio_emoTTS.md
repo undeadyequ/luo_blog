@@ -43,21 +43,87 @@ toc: true
 - Pitch range(+0.3)
 - Pitch range(-0.3)
 
-## Fine-conditioning on prominence (Angry)
+## Fine-condtioning on prominence (Angry)
 - NOUN (+0.3)
+  <audio controls="controls">
+  <source type="audio/wav" src="/luo_blog/assets/promTTS/ang_eng_mean_0_NOUN_03_2.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+  </audio>
 - NOUN (-0.3)
+  <audio controls="controls">
+  <source type="audio/wav" src="/luo_blog/assets/promTTS/ang_eng_mean_0_NOUN_-03_2.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+  </audio>
 - VERB (+0.3)
+  <audio controls="controls">
+  <source type="audio/wav" src="/luo_blog/assets/promTTS/ang_eng_mean_0_VERB_03_2.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+  </audio>
 - VERB (-0.3)
+  <audio controls="controls">
+  <source type="audio/wav" src="/luo_blog/assets/promTTS/ang_eng_mean_0_VERB_-03_2.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+  </audio>
 - ADJ (+0.3)
+  <audio controls="controls">
+  <source type="audio/wav" src="/luo_blog/assets/promTTS/ang_eng_mean_0_ADJ_03_2.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+  </audio>
 - ADJ (-0.3)
+  <audio controls="controls">
+  <source type="audio/wav" src="/luo_blog/assets/promTTS/ang_eng_mean_0_ADJ_-03_2.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+  </audio>
 - ADV (+0.3)
+  <audio controls="controls">
+  <source type="audio/wav" src="/luo_blog/assets/promTTS/neu_eng_mean_0_ADV_03_2.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+  </audio>
 - ADV (-0.3)
-## Fine-condtioning on prominence (Neutral)
+  <audio controls="controls">
+  <source type="audio/wav" src="/luo_blog/assets/promTTS/neu_eng_mean_0_ADV_-03_2.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+  </audio>
+
+
+## Fine-conditioning on prominence (Neutral)
 - NOUN (+0.3)
+  <audio controls="controls">
+  <source type="audio/wav" src="/luo_blog/assets/promTTS/neu_eng_mean_0_NOUN_03_2.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+  </audio>
 - NOUN (-0.3)
+  <audio controls="controls">
+  <source type="audio/wav" src="/luo_blog/assets/promTTS/neu_eng_mean_0_NOUN_-03_2.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+  </audio>
 - VERB (+0.3)
+  <audio controls="controls">
+  <source type="audio/wav" src="/luo_blog/assets/promTTS/neu_eng_mean_0_VERB_03_2.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+  </audio>
 - VERB (-0.3)
+  <audio controls="controls">
+  <source type="audio/wav" src="/luo_blog/assets/promTTS/neu_eng_mean_0_VERB_-03_2.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+  </audio>
 - ADJ (+0.3)
+  <audio controls="controls">
+  <source type="audio/wav" src="/luo_blog/assets/promTTS/neu_eng_mean_0_ADJ_03_2.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+  </audio>
 - ADJ (-0.3)
+  <audio controls="controls">
+  <source type="audio/wav" src="/luo_blog/assets/promTTS/neu_eng_mean_0_ADJ_-03_2.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+  </audio>
 - ADV (+0.3)
+  <audio controls="controls">
+  <source type="audio/wav" src="/luo_blog/assets/promTTS/neu_eng_mean_0_ADV_03_2.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+  </audio>
 - ADV (-0.3)
+  <audio controls="controls">
+  <source type="audio/wav" src="/luo_blog/assets/promTTS/neu_eng_mean_0_ADV_-03_2.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+  </audio>
